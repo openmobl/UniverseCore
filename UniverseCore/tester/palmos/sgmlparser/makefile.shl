@@ -1,0 +1,192 @@
+## --------------------------------------------------------------------------
+# Project name and PRC name.
+## --------------------------------------------------------------------------
+
+PROJECT_NAME = SGMLTester
+SPACE =$(EMPTY) $(EMPTY)
+ESCAPED_PROJECT_NAME = $(subst $(SPACE),\ ,$(PROJECT_NAME))
+PRC_NAME = SGMLTester.prc
+
+## --------------------------------------------------------------------------
+# Sources and Resources
+## --------------------------------------------------------------------------
+
+STD_C = stdc.c
+
+SRCFILES = ../../../platform/Base64.c ../../../platform/international/International.c \
+	../../../platform/international/ascii.c ../../../platform/international/big5.c \
+	../../../platform/international/big5_2003.c ../../../platform/international/cp1250.c \
+	../../../platform/international/cp1251.c ../../../platform/international/cp1252.c \
+	../../../platform/international/cp1253.c ../../../platform/international/cp1254.c \
+	../../../platform/international/cp1255.c ../../../platform/international/cp1256.c \
+	../../../platform/international/cp1257.c ../../../platform/international/cp1258.c \
+	../../../platform/international/cp437.c ../../../platform/international/cp850.c \
+	../../../platform/international/cp864.c ../../../platform/international/cp866.c \
+	../../../platform/international/cp874.c ../../../platform/international/euc_cn.c \
+	../../../platform/international/euc_jp.c ../../../platform/international/euc_kr.c \
+	../../../platform/international/gb2312.c ../../../platform/international/gbk.c \
+	../../../platform/international/hz.c ../../../platform/international/iso2022_jp.c \
+	../../../platform/international/iso2022_kr.c ../../../platform/international/iso8859_1.c \
+	../../../platform/international/iso8859_15.c ../../../platform/international/iso8859_2.c \
+	../../../platform/international/iso8859_3.c ../../../platform/international/iso8859_4.c \
+	../../../platform/international/iso8859_5.c ../../../platform/international/iso8859_6.c \
+	../../../platform/international/iso8859_7.c ../../../platform/international/iso8859_8.c \
+	../../../platform/international/iso8859_9.c ../../../platform/international/jisx0201.c \
+	../../../platform/international/jisx0208.c ../../../platform/international/jisx0212.c \
+	../../../platform/international/koi8_r.c ../../../platform/international/ksc5601.c \
+	../../../platform/international/mac_arabic.c ../../../platform/international/mac_centraleurope.c \
+	../../../platform/international/mac_croatian.c ../../../platform/international/mac_cyrillic.c \
+	../../../platform/international/mac_greek.c ../../../platform/international/mac_hebrew.c \
+	../../../platform/international/mac_iceland.c ../../../platform/international/mac_roman.c \
+	../../../platform/international/mac_romania.c ../../../platform/international/mac_thai.c \
+	../../../platform/international/mac_turkish.c ../../../platform/international/mac_ukraine.c \
+	../../../platform/international/nextstep.c ../../../platform/international/sjis.c \
+	../../../platform/international/ucs2.c ../../../platform/international/ucs4.c \
+	../../../platform/international/utf16.c ../../../platform/international/utf32.c \
+	../../../platform/international/utf7.c ../../../platform/international/utf8.c \
+	../../../platform/international/viscii.c \
+	../../../platform/palmos/Debug.c ../../../platform/palmos/MemMgr.c \
+	../../../platform/palmos/PalmUtils.c ../../../platform/palmos/File.c \
+	../../../platform/palmos/Error.c ../../../platform/palmos/Strings.c \
+	../../../platform/palmos/Net.c ../../../platform/palmos/PlatformTime.c \
+	../../../dom/DomComment.c ../../../dom/DomDocument.c ../../../dom/DomElement.c \
+	../../../dom/DomNode.c ../../../dom/DomNodeList.c ../../../dom/DomText.c ../../../dom/DomCDATA.c \
+	../../../dom/DomEvent.c ../../../dom/Variant.c \
+	../../../parser/Parser.c \
+	../../../parser/html/SgmlExtensionHtml.c ../../../parser/xml/SgmlExtensionXml.c \
+	../../../parser/sgml/SgmlParser.c ../../../parser/wbxml/WBXML.c ../../../parser/wml/WMLC.c \
+	../../../loader/http/HTTP.c ../../../loader/WebData.c ../../../loader/URL.c \
+	../../../loader/Cache.c ../../../loader/Cookies.c ../../../loader/Loader.c ../../../loader/wap/WAPUtils.c \
+	../../../page/Document.c ../../../core/CorePrefs.c
+
+# SHL (PalmOS5-native) sources
+SHL_SOURCES = $(SRCFILES) Tester.c $(STD_C)
+
+# Native resources
+ARM_RESOURCES = Tester.xrd
+
+SHL_INDEX_ARM = 0x240
+
+SHL_INDEX_BASE = 
+SHL_INDEX_THUMB = 
+
+SHL_DEF_FILE = Tester.sld
+
+## --------------------------------------------------------------------------
+# Database settings
+## --------------------------------------------------------------------------
+
+CREATOR_ID = SGML
+DATABASE_TYPE = appl
+
+# to enable reset on install, use -r
+DATABASE_RESET = 
+# to enable backup, use -b
+DATABASE_BACKUP = -b
+# to make the app hidden, use -h
+DATABASE_HIDDEN = 
+# to prevent copy, use -p
+DATABASE_PROTECT = 
+
+DATABASE_VERSION = 1
+
+LOCALE = enUS
+DATABASE_NAME = $(ESCAPED_PROJECT_NAME)
+
+
+## --------------------------------------------------------------------------
+# Build Settings
+## --------------------------------------------------------------------------
+
+SDK_DIR = C:/PalmOS5RESDK
+
+TARGET_PLATFORM = device
+
+# Set arm or thumb target ISA here
+#PNO_DEV_ARM_OR_THUMB = thumb
+#SHL_DEV_ARM_OR_THUMB = thumb
+
+# NONE, SIZE, SPEED
+OPTIMIZE_LEVEL = SIZE
+
+# NONE, SOME, ALL
+WARNING_LEVEL = SOME
+
+# List additional libraries to link with
+# (Full or project relative path)
+ADDITIONAL_68K_LINK_LIBRARIES =
+ADDITIONAL_PNO_DEV_LINK_LIBRARIES =
+ADDITIONAL_PNO_SIM_LINK_LIBRARIES =
+ADDITIONAL_SHL_DEV_LINK_LIBRARIES =
+ADDITIONAL_SHL_SIM_LINK_LIBRARIES =
+
+CORE_INCLUDE = -I../../../include/ -I../../../platform/include/ -I../../../platform/palmos/include/
+CORE_INCLUDE += -I../../../css/ -I../../../dom/ -I../../../history/ -I../../../html/ -I../../../loader/
+CORE_INCLUDE += -I../../../page/ -I../../../platform/ -I../../../platform/image-decoders/ -I../../../rendering/
+CORE_INCLUDE += -I../../../platform/palmos/ -I../../../loader/palmos/
+CORE_INCLUDE += -I../../../parser/ -I../../../parser/html/ -I../../../parser/sgml/ -I../../../parser/smil/
+CORE_INCLUDE += -I../../../parser/wbxml/ -I../../../parser/wml/ -I../../../parser/xml/
+
+SYSTEM_HEADERS = -I "$(SDK_DIR)/IncsPalmSource/Core/System/Unix" -I "$(SDK_DIR)/Incs/System" -I "$(SDK_DIR)/Incs/Libraries/SSL"
+SYSTEM_HEADERS += -I "$(SDK_DIR)/IncsPalmSource/Libraries/SSL"
+
+# Additional paths to look for #include "header"
+LOCAL_68K_INCLUDE_PATHS = $(CORE_INCLUDE) 
+LOCAL_PNO_DEV_INCLUDE_PATHS = $(CORE_INCLUDE) $(SYSTEM_HEADERS)
+LOCAL_PNO_SIM_INCLUDE_PATHS = $(CORE_INCLUDE) $(SYSTEM_HEADERS)
+LOCAL_SHL_DEV_INCLUDE_PATHS = $(CORE_INCLUDE) $(SYSTEM_HEADERS)
+LOCAL_SHL_SIM_INCLUDE_PATHS = $(CORE_INCLUDE) $(SYSTEM_HEADERS)
+
+# Additional paths to look for #include <header>
+SYSTEM_68K_INCLUDE_PATHS = $(CORE_INCLUDE) $(SYSTEM_HEADERS)
+SYSTEM_PNO_DEV_INCLUDE_PATHS = $(CORE_INCLUDE) $(SYSTEM_HEADERS)
+SYSTEM_PNO_SIM_INCLUDE_PATHS = $(CORE_INCLUDE) $(SYSTEM_HEADERS)
+SYSTEM_SHL_DEV_INCLUDE_PATHS = $(CORE_INCLUDE) $(SYSTEM_HEADERS)
+SYSTEM_SHL_SIM_INCLUDE_PATHS = $(CORE_INCLUDE) $(SYSTEM_HEADERS)
+
+# Specify any needed preprocessor symbols.
+68K_DEFINES = $(BUILD_DEFINES)
+PNO_DEV_DEFINES = $(BUILD_DEFINES)
+PNO_SIM_DEFINES = $(BUILD_DEFINES)
+SHL_DEV_DEFINES = $(BUILD_DEFINES)
+SHL_SIM_DEFINES = $(BUILD_DEFINES)
+
+# Specify additional compiler flags for all files
+ADDITIONAL_68K_COMPILER_FLAGS = 
+ADDITIONAL_PNO_DEV_COMPILER_FLAGS = 
+ADDITIONAL_PNO_SIM_COMPILER_FLAGS = 
+ADDITIONAL_SHL_DEV_COMPILER_FLAGS = 
+ADDITIONAL_SHL_SIM_COMPILER_FLAGS = 
+
+# Specify additional linker flags
+ADDITIONAL_68K_LINKER_FLAGS =
+ADDITIONAL_PNO_DEV_LINKER_FLAGS =
+ADDITIONAL_PNO_SIM_LINKER_FLAGS =
+ADDITIONAL_SHL_DEV_LINKER_FLAGS =
+ADDITIONAL_SHL_SIM_LINKER_FLAGS =
+
+# Tools Directory
+TOOLS_DIR =
+
+
+## --------------------------------------------------------------------------
+# Resource Settings
+## --------------------------------------------------------------------------
+
+# LATIN, JAPANESE, SIMPLIFIED_CHINESE
+TEXTENCODING = LATIN
+
+# NOCHECK, STRICT
+LOCALE_CHECKING =
+
+# FALSE, TRUE
+STRICT_ENCODING = FALSE
+
+
+## --------------------------------------------------------------------------
+# System stub archives targets
+## --------------------------------------------------------------------------
+
+SHL_SYSTEM_LIBRARIES = NetLib
+
+include $(SDK_DIR)/MakeEngines/SHL_PODS.mk

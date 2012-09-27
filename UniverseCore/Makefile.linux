@@ -1,0 +1,125 @@
+# UniverseCore
+#
+# Copyright (c) 2007 OpenMobl Systems
+# 
+
+NAME = UniverseCore
+
+SRCDIR = src/
+OUTDIR = objs/
+
+CC = gcc 
+
+CFLAGS  = -g -Wall
+CFLAGS += -I./include/ -I./platform/include/ -I./platform/linux/include/
+CFLAGS += -I./css/ -I./core/ -I./dom/ -I./history/ -I./loader/ -I./page/
+CFLAGS += -I./platform/ -I./platform/image-decoders/ -I./rendering/
+CFLAGS += -I./platform/international/ -I./platform/linux/
+CFLAGS += -I./loader/ -I./loader/http/ -I./loader/wap/
+CFLAGS += -I./parser/ -I./parser/html/ -I./parser/prov/ -I./parser/push/
+CFLAGS += -I./parser/sgml/ -I./parser/smil/ -I./parser/wbxml/ 
+CFLAGS += -I./parser/wml/ -I./parser/xml/
+
+LINKFLAGS  = -nostartfiles
+
+SRCFILES = platform/Base64.c platform/international/International.c \
+	platform/international/ascii.c platform/international/big5.c \
+	platform/international/big5_2003.c platform/international/cp1250.c \
+	platform/international/cp1251.c platform/international/cp1252.c \
+	platform/international/cp1253.c platform/international/cp1254.c \
+	platform/international/cp1255.c platform/international/cp1256.c \
+	platform/international/cp1257.c platform/international/cp1258.c \
+	platform/international/cp437.c platform/international/cp850.c \
+	platform/international/cp864.c platform/international/cp866.c \
+	platform/international/cp874.c platform/international/euc_cn.c \
+	platform/international/euc_jp.c platform/international/euc_kr.c \
+	platform/international/gb2312.c platform/international/gbk.c \
+	platform/international/hz.c platform/international/iso2022_jp.c \
+	platform/international/iso2022_kr.c platform/international/iso8859_1.c \
+	platform/international/iso8859_15.c platform/international/iso8859_2.c \
+	platform/international/iso8859_3.c platform/international/iso8859_4.c \
+	platform/international/iso8859_5.c platform/international/iso8859_6.c \
+	platform/international/iso8859_7.c platform/international/iso8859_8.c \
+	platform/international/iso8859_9.c platform/international/jisx0201.c \
+	platform/international/jisx0208.c platform/international/jisx0212.c \
+	platform/international/koi8_r.c platform/international/ksc5601.c \
+	platform/international/mac_arabic.c platform/international/mac_centraleurope.c \
+	platform/international/mac_croatian.c platform/international/mac_cyrillic.c \
+	platform/international/mac_greek.c platform/international/mac_hebrew.c \
+	platform/international/mac_iceland.c platform/international/mac_roman.c \
+	platform/international/mac_romania.c platform/international/mac_thai.c \
+	platform/international/mac_turkish.c platform/international/mac_ukraine.c \
+	platform/international/nextstep.c platform/international/sjis.c \
+	platform/international/ucs2.c platform/international/ucs4.c \
+	platform/international/utf16.c platform/international/utf32.c \
+	platform/international/utf7.c platform/international/utf8.c \
+	platform/international/viscii.c \
+	platform/linux/Debug.c platform/linux/MemMgr.c \
+	platform/linux/File.c platform/linux/Error.c \
+	platform/linux/Strings.c platform/linux/Net.c \
+	platform/linux/PlatformTime.c \
+	dom/DomComment.c dom/DomDocument.c dom/DomElement.c \
+	dom/DomNode.c dom/DomNodeList.c dom/DomText.c dom/DomCDATA.c \
+	dom/DomEvent.c dom/Variant.c \
+	parser/Parser.c \
+	parser/html/SgmlExtensionHtml.c parser/xml/SgmlExtensionXml.c \
+	parser/sgml/SgmlParser.c parser/wbxml/WBXML.c parser/wml/WMLC.c \
+	loader/http/HTTP.c loader/WebData.c loader/URL.c \
+	loader/Cache.c loader/Cookies.c loader/Loader.c loader/wap/WAPUtils.c \
+	page/Document.c core/CorePrefs.c
+
+# Temporarily removed from the international support:
+#	platform/international/cns11643_1.c platform/international/cns11643_2.c \
+#	platform/international/euc_tw.c platform/international/iso2022_cn.c \
+
+OBJS = $(SRCFILES:%.c=$(OUTDIR)%.o)
+
+OUT = lib$(NAME).a
+
+ifeq ($(shell test -e objs/ && echo y),y)
+all : $(OUT)
+else
+all : makedirs $(OUT)
+endif
+
+makedirs:
+	@echo "Creating output directories..." && \
+	mkdir $(OUTDIR) && \
+	cd $(OUTDIR) && \
+	mkdir css/ && \
+	mkdir core/ && \
+	mkdir dom/ && \
+	mkdir history/ && \
+	mkdir html/ && \
+	mkdir loader/ && \
+	mkdir loader/http/ && \
+	mkdir loader/wap/ && \
+	mkdir page/ && \
+	mkdir parser/ && \
+	mkdir parser/html/ && \
+	mkdir parser/prov/ && \
+	mkdir parser/push/ && \
+	mkdir parser/sgml/ && \
+	mkdir parser/smil/ && \
+	mkdir parser/wbxml/ && \
+	mkdir parser/wml/ && \
+	mkdir parser/xml/ && \
+	mkdir platform/ && \
+	mkdir platform/international/ && \
+	mkdir platform/linux/ && \
+	mkdir rendering/ && \
+	cd ../
+
+$(OUTDIR)%.o: %.c 
+	@echo "Compiling $<..." && \
+	$(CC) $(CFLAGS) $(CONFIGFLAGS) -c $< -o $@
+
+$(OUT): $(OBJS)
+	@echo "Creating shared library..." && \
+	ar rcs $(OUT) $(OBJS)
+	
+
+clean:
+	@echo "Cleaning up..." && \
+	rm -r $(OUTDIR) && \
+	rm -f $(OUT)

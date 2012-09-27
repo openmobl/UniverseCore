@@ -1,0 +1,339 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		066FB0530C2504E000F083B7 /* UniverseCore */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 066FB05D0C2504FA00F083B7 /* Build configuration list for PBXAggregateTarget "UniverseCore" */;
+			buildPhases = (
+			);
+			dependencies = (
+				066FB0610C25051E00F083B7 /* PBXTargetDependency */,
+			);
+			name = UniverseCore;
+			productName = UniverseCore;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		066FB06C0C25067F00F083B7 /* Tester.c in Sources */ = {isa = PBXBuildFile; fileRef = 066FB06B0C25067F00F083B7 /* Tester.c */; };
+		066FB0890C25085200F083B7 /* libUniverseCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 066FB0880C25085200F083B7 /* libUniverseCore.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		066FB0590C2504FA00F083B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 066FB0540C2504FA00F083B7 /* UniverseCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC046055464E500DB518D;
+			remoteInfo = UniverseCore;
+		};
+		066FB05B0C2504FA00F083B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 066FB0540C2504FA00F083B7 /* UniverseCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 064517970C19F4CB00AB05DF;
+			remoteInfo = UniverseCoreDynamic;
+		};
+		066FB0600C25051E00F083B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 066FB0540C2504FA00F083B7 /* UniverseCore.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC045055464E500DB518D;
+			remoteInfo = UniverseCore;
+		};
+		066FB0640C2505A100F083B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 066FB0530C2504E000F083B7;
+			remoteInfo = UniverseCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8DD76FAF0486AB0100D96B5E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		066FB0540C2504FA00F083B7 /* UniverseCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UniverseCore.xcodeproj; path = ../../../UniverseCore.xcodeproj; sourceTree = SOURCE_ROOT; };
+		066FB06B0C25067F00F083B7 /* Tester.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Tester.c; sourceTree = "<group>"; };
+		066FB0880C25085200F083B7 /* libUniverseCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libUniverseCore.a; path = ../../../build/Debug/libUniverseCore.a; sourceTree = SOURCE_ROOT; };
+		8DD76FB20486AB0100D96B5E /* httptester */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = httptester; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DD76FAD0486AB0100D96B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				066FB0890C25085200F083B7 /* libUniverseCore.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		066FB0550C2504FA00F083B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				066FB05A0C2504FA00F083B7 /* libUniverseCore.a */,
+				066FB05C0C2504FA00F083B7 /* libUniverseCoreDynamic.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08FB7794FE84155DC02AAC07 /* httptester */ = {
+			isa = PBXGroup;
+			children = (
+				066FB0880C25085200F083B7 /* libUniverseCore.a */,
+				066FB06B0C25067F00F083B7 /* Tester.c */,
+				066FB0540C2504FA00F083B7 /* UniverseCore.xcodeproj */,
+				08FB7795FE84155DC02AAC07 /* Source */,
+				C6A0FF2B0290797F04C91782 /* Documentation */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = httptester;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DD76FB20486AB0100D96B5E /* httptester */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6A0FF2B0290797F04C91782 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DD76FA90486AB0100D96B5E /* httptester */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB928508733DD80010E9CD /* Build configuration list for PBXNativeTarget "httptester" */;
+			buildPhases = (
+				8DD76FAB0486AB0100D96B5E /* Sources */,
+				8DD76FAD0486AB0100D96B5E /* Frameworks */,
+				8DD76FAF0486AB0100D96B5E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				066FB0650C2505A100F083B7 /* PBXTargetDependency */,
+			);
+			name = httptester;
+			productInstallPath = "$(HOME)/bin";
+			productName = httptester;
+			productReference = 8DD76FB20486AB0100D96B5E /* httptester */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "httptester" */;
+			hasScannedForEncodings = 1;
+			mainGroup = 08FB7794FE84155DC02AAC07 /* httptester */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 066FB0550C2504FA00F083B7 /* Products */;
+					ProjectRef = 066FB0540C2504FA00F083B7 /* UniverseCore.xcodeproj */;
+				},
+			);
+			targets = (
+				8DD76FA90486AB0100D96B5E /* httptester */,
+				066FB0530C2504E000F083B7 /* UniverseCore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		066FB05A0C2504FA00F083B7 /* libUniverseCore.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libUniverseCore.a;
+			remoteRef = 066FB0590C2504FA00F083B7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		066FB05C0C2504FA00F083B7 /* libUniverseCoreDynamic.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libUniverseCoreDynamic.dylib;
+			remoteRef = 066FB05B0C2504FA00F083B7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DD76FAB0486AB0100D96B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				066FB06C0C25067F00F083B7 /* Tester.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		066FB0610C25051E00F083B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UniverseCore;
+			targetProxy = 066FB0600C25051E00F083B7 /* PBXContainerItemProxy */;
+		};
+		066FB0650C2505A100F083B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 066FB0530C2504E000F083B7 /* UniverseCore */;
+			targetProxy = 066FB0640C2505A100F083B7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		066FB05E0C2504FA00F083B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = UniverseCore;
+			};
+			name = Debug;
+		};
+		066FB05F0C2504FA00F083B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				PRODUCT_NAME = UniverseCore;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		1DEB928608733DD80010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = "$(HOME)/bin";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_2)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../../..\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_2 = "\"$(SRCROOT)/../../../build/Debug\"";
+				PRODUCT_NAME = httptester;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		1DEB928708733DD80010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = "$(HOME)/bin";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_2)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../../..\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_2 = "\"$(SRCROOT)/../../../build/Debug\"";
+				PRODUCT_NAME = httptester;
+			};
+			name = Release;
+		};
+		1DEB928A08733DD80010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				USER_HEADER_SEARCH_PATHS = "../../..//** $(inherited)";
+			};
+			name = Debug;
+		};
+		1DEB928B08733DD80010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				USER_HEADER_SEARCH_PATHS = "../../..//** $(inherited)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		066FB05D0C2504FA00F083B7 /* Build configuration list for PBXAggregateTarget "UniverseCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				066FB05E0C2504FA00F083B7 /* Debug */,
+				066FB05F0C2504FA00F083B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB928508733DD80010E9CD /* Build configuration list for PBXNativeTarget "httptester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB928608733DD80010E9CD /* Debug */,
+				1DEB928708733DD80010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "httptester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB928A08733DD80010E9CD /* Debug */,
+				1DEB928B08733DD80010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

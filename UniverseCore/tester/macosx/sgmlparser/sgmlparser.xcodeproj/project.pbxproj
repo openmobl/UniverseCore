@@ -1,0 +1,335 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		06B6E1930C164A78000AD5E1 /* UniverseCore */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 06B6E19D0C164A92000AD5E1 /* Build configuration list for PBXAggregateTarget "UniverseCore" */;
+			buildPhases = (
+			);
+			dependencies = (
+				06B6E1A20C164AC9000AD5E1 /* PBXTargetDependency */,
+			);
+			name = UniverseCore;
+			productName = UniverseCore;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		06B6E17B0C1648BE000AD5E1 /* Tester.c in Sources */ = {isa = PBXBuildFile; fileRef = 06B6E17A0C1648BE000AD5E1 /* Tester.c */; };
+		06B6E1B90C164C73000AD5E1 /* libUniverseCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06B6E1B80C164C73000AD5E1 /* libUniverseCore.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		06B66E000C1A22FA001E08AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06B6E1940C164A92000AD5E1 /* UniverseCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 064517970C19F4CB00AB05DF;
+			remoteInfo = UniverseCoreDynamic;
+		};
+		06B6E19B0C164A92000AD5E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06B6E1940C164A92000AD5E1 /* UniverseCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC046055464E500DB518D;
+			remoteInfo = UniverseCore;
+		};
+		06B6E1A10C164AC9000AD5E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06B6E1940C164A92000AD5E1 /* UniverseCore.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC045055464E500DB518D;
+			remoteInfo = UniverseCore;
+		};
+		06B6E1A40C164B4B000AD5E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06B6E1930C164A78000AD5E1;
+			remoteInfo = UniverseCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8DD76FAF0486AB0100D96B5E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		06B6E0960C164487000AD5E1 /* sgmlparser */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = sgmlparser; sourceTree = BUILT_PRODUCTS_DIR; };
+		06B6E17A0C1648BE000AD5E1 /* Tester.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = Tester.c; sourceTree = "<group>"; };
+		06B6E1940C164A92000AD5E1 /* UniverseCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UniverseCore.xcodeproj; path = ../../../UniverseCore.xcodeproj; sourceTree = SOURCE_ROOT; };
+		06B6E1B80C164C73000AD5E1 /* libUniverseCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libUniverseCore.a; path = ../../../build/Debug/libUniverseCore.a; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DD76FAD0486AB0100D96B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06B6E1B90C164C73000AD5E1 /* libUniverseCore.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06B6E1950C164A92000AD5E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06B6E19C0C164A92000AD5E1 /* libUniverseCore.a */,
+				06B66E010C1A22FA001E08AC /* libUniverseCoreDynamic.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08FB7794FE84155DC02AAC07 /* sgmlparser */ = {
+			isa = PBXGroup;
+			children = (
+				06B6E1B80C164C73000AD5E1 /* libUniverseCore.a */,
+				06B6E1940C164A92000AD5E1 /* UniverseCore.xcodeproj */,
+				08FB7795FE84155DC02AAC07 /* Source */,
+				C6A0FF2B0290797F04C91782 /* Documentation */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = sgmlparser;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				06B6E17A0C1648BE000AD5E1 /* Tester.c */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06B6E0960C164487000AD5E1 /* sgmlparser */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6A0FF2B0290797F04C91782 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DD76FA90486AB0100D96B5E /* sgmlparser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB928508733DD80010E9CD /* Build configuration list for PBXNativeTarget "sgmlparser" */;
+			buildPhases = (
+				8DD76FAB0486AB0100D96B5E /* Sources */,
+				8DD76FAD0486AB0100D96B5E /* Frameworks */,
+				8DD76FAF0486AB0100D96B5E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06B6E1A50C164B4B000AD5E1 /* PBXTargetDependency */,
+			);
+			name = sgmlparser;
+			productInstallPath = "$(HOME)/bin";
+			productName = sgmlparser;
+			productReference = 06B6E0960C164487000AD5E1 /* sgmlparser */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "sgmlparser" */;
+			hasScannedForEncodings = 1;
+			mainGroup = 08FB7794FE84155DC02AAC07 /* sgmlparser */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 06B6E1950C164A92000AD5E1 /* Products */;
+					ProjectRef = 06B6E1940C164A92000AD5E1 /* UniverseCore.xcodeproj */;
+				},
+			);
+			targets = (
+				8DD76FA90486AB0100D96B5E /* sgmlparser */,
+				06B6E1930C164A78000AD5E1 /* UniverseCore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		06B66E010C1A22FA001E08AC /* libUniverseCoreDynamic.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libUniverseCoreDynamic.dylib;
+			remoteRef = 06B66E000C1A22FA001E08AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		06B6E19C0C164A92000AD5E1 /* libUniverseCore.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libUniverseCore.a;
+			remoteRef = 06B6E19B0C164A92000AD5E1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DD76FAB0486AB0100D96B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06B6E17B0C1648BE000AD5E1 /* Tester.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		06B6E1A20C164AC9000AD5E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UniverseCore;
+			targetProxy = 06B6E1A10C164AC9000AD5E1 /* PBXContainerItemProxy */;
+		};
+		06B6E1A50C164B4B000AD5E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06B6E1930C164A78000AD5E1 /* UniverseCore */;
+			targetProxy = 06B6E1A40C164B4B000AD5E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		06B6E19E0C164A92000AD5E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = UniverseCore;
+			};
+			name = Debug;
+		};
+		06B6E19F0C164A92000AD5E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				PRODUCT_NAME = UniverseCore;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		1DEB928608733DD80010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = "$(HOME)/bin";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../../../build/Debug\"";
+				PRODUCT_NAME = sgmlparser;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		1DEB928708733DD80010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = "$(HOME)/bin";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../../../build/Debug\"";
+				PRODUCT_NAME = sgmlparser;
+			};
+			name = Release;
+		};
+		1DEB928A08733DD80010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				USER_HEADER_SEARCH_PATHS = "../../..//** $(inherited)";
+			};
+			name = Debug;
+		};
+		1DEB928B08733DD80010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				USER_HEADER_SEARCH_PATHS = "../../..//** $(inherited)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06B6E19D0C164A92000AD5E1 /* Build configuration list for PBXAggregateTarget "UniverseCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06B6E19E0C164A92000AD5E1 /* Debug */,
+				06B6E19F0C164A92000AD5E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB928508733DD80010E9CD /* Build configuration list for PBXNativeTarget "sgmlparser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB928608733DD80010E9CD /* Debug */,
+				1DEB928708733DD80010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "sgmlparser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB928A08733DD80010E9CD /* Debug */,
+				1DEB928B08733DD80010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}
